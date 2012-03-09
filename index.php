@@ -100,7 +100,7 @@ if (isset($_GET['_escaped_fragment_'])) {
 	
   </div> <!--! end of #container -->
   <footer>
-		Created with <a href="http://leuchtetgruen.de/blog/index.php#!whatismarkdownblog">markdownblog</a> - <a href="content/feed.rss">RSS</a>
+		Created with <a href="http://leuchtetgruen.de/markdownblog">markdownblog</a> - <a href="content/feed.rss">RSS</a>
   </footer>
 
   <!-- JavaScript at the bottom for fast page loading -->
