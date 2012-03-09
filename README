@@ -1,0 +1,39 @@
+This is markdownblog, a bloggingsoftware based on markdown and dropbox.
+
+Here's what you need to do to get this up and running
+-----------------------------------------------------
+
+* Get the software from this repo
+* As this project uses [php-dropbox](http://code.google.com/p/dropbox-php/) you need to install the [PHP OAuth Extension](http://pecl.php.net/package/oauth)
+* Now we start to configure the blog - open config.php to do so.
+
+   You need to register a dropbox developer account to automatically download files from your dropbox. Go to the [Dropbox Developer Center](http://developer.dropbox.com/) and
+   register an app (name it whatever you want). You'll get the two keys there. Enter them in the two variables.
+
+		$consumerKey = '';
+		$consumerSecret = '';
+	
+    `$blogDir` is the directory on you dropbox that will contain your blogposts. `$dbUsername` and `$dbPassword` are your dropbox username and password.
+
+    All other variables are selfexplaining. `$rssTitle` is the title of your blog, `$rssLink` is the link to your main blog site (like http://example.com/blog) and `$rssDesc`
+    contains a description of your blog. `$rssLang` is the language of your blog.
+
+* You need to make sure that your webserver can write in the `content` directory. So this is what you need to do on your server:
+
+		chmod -R 777 content
+
+* If you want comments you need to register a disqus account. You can do so on the [Disqus-Website](http://disqus.com/) . If you did you need to enter your shortname
+in index.config.php . Locate the line saying
+
+		$disqusName = "exampleblog";
+		
+   and change exampleblog to the short name you registered at disqus.
+
+* Now let's start blogging. Create a markdown document in your dropbox (take care that it's in the right folder - like /blog) and write some text there. If you name
+	the file something-published.mdown it will appear in your blog. All files that do not contain *-published* will be converted to HTML and put on your server, but will
+	neither appear in your RSS feed nor in your blog.
+	
+* If you're done writing your article go to http://example.com/blog/process.php (or whatever the URL is with your blog) and markdownblog will create the HTML-Files and the
+   RSS-Feed.
+
+* That's it. All you need to do from now on is to create .mdown documents in your dropbox and they will automatically appear on your blog
