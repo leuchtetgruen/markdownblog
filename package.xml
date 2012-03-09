@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Dropbox</name>
+ <channel>pear.dropbox-php.com</channel>
+ <summary>Dropbox API library for PHP</summary>
+ <description>Dropbox API library for PHP.
+
+Requires oauth and json</description>
+ <lead>
+  <name>Joe Constant</name>
+  <user>lazyguru</user>
+  <email>lazyguru@jofee.com</email>
+  <active>yes</active>
+ </lead>
+ <contributor>
+  <name>Evert Pot</name>
+  <user>evert</user>
+  <email>evert@rooftopsolutions.nl</email>
+  <active>no</active>
+ </contributor>
+ <date>2011-09-27</date>
+ <time>06:33:19</time>
+ <version>
+  <release>0.4.4</release>
+  <api>0.4.4</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+ <notes>
+- Added useSSL flag to constructor to allow turning off SSL use
+- Added code to turn off SSL validation during OAuth calls
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="85d84ba7a7b2a2ec91acb28e133fe0db" name="Dropbox/API.php" role="php" />
+   <file baseinstalldir="." md5sum="f2eb54a3691eab71e4cb1f81d2f2b923" name="Dropbox/autoload.php" role="php" />
+   <file baseinstalldir="." md5sum="78d89befd9e51c312156884561624c54" name="Dropbox/Exception.php" role="php" />
+   <file baseinstalldir="." md5sum="aef8a7cc005af91663a446378ea428f9" name="Dropbox/OAuth.php" role="php" />
+   <file baseinstalldir="." md5sum="0bdd1415ac2a781c189a4beeecc21f8a" name="Dropbox/Exception/Forbidden.php" role="php" />
+   <file baseinstalldir="." md5sum="c7302b9d270d1f46ca52a55ce017d3db" name="Dropbox/Exception/NotFound.php" role="php" />
+   <file baseinstalldir="." md5sum="c1f8702aea220c88c83f71cf10da22ed" name="Dropbox/Exception/OverQuota.php" role="php" />
+   <file baseinstalldir="." md5sum="bf9b9b3179f8e96838a041cd03a463a0" name="Dropbox/Exception/RequestToken.php" role="php" />
+   <file baseinstalldir="." md5sum="949be6d8b7bb41eff561cc42a51be172" name="Dropbox/OAuth/PEAR.php" role="php" />
+   <file baseinstalldir="." md5sum="200a656801f8263e511e8d25f5d6c06e" name="Dropbox/OAuth/PHP.php" role="php" />
+   <file baseinstalldir="." md5sum="b9b431381007e716cf81971f8f3fdb4c" name="Dropbox/OAuth/Wordpress.php" role="php" />
+   <file baseinstalldir="." md5sum="666ac03349fb64383f626ff63600a719" name="Dropbox/OAuth/Zend.php" role="php" />
+   <file baseinstalldir="." md5sum="5ee823233bc15db009ecc06d7abd24f3" name="examples/accountinfo.php" role="doc" />
+   <file baseinstalldir="." md5sum="94c05e563b68243db5d6ec49fe902d05" name="examples/createaccount.php" role="doc" />
+   <file baseinstalldir="." md5sum="cefc917f9d446945f2e939e01d65fa08" name="examples/download_image.php" role="doc" />
+   <file baseinstalldir="." md5sum="1e1ee10475114602d1573134395fd26c" name="examples/getmetadata.php" role="doc" />
+   <file baseinstalldir="." md5sum="81cf80418537f1e315fde633f97f2ffe" name="examples/oauth_workflow.php" role="doc" />
+   <file baseinstalldir="." md5sum="61d55c115a49a448e3f3dac4d4dce200" name="examples/uploading.php" role="doc" />
+   <file baseinstalldir="." md5sum="0263e06418c75779afe4ca23bc02d2b8" name="LICENSE" role="doc" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+  <optional>
+   <package>
+    <name>HTTP_OAuth</name>
+    <channel>pear.php.net</channel>
+    <min>0.1.18</min>
+   </package>
+   <extension>
+    <name>oauth</name>
+   </extension>
+  </optional>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-05-08</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+First release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-05-08</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+Automatically trimming double slashes from path. Fixed error output
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.2</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-05-09</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+Uploading now works
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-05-10</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+Added support for a callback url, for a more streamlined user experience
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.3.0</release>
+    <api>0.3.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-07-20</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+There&apos;s now a choice between PEAR&apos;s HTTP_OAuth and the OAuth PECL extension
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.4.0</release>
+    <api>0.4.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-08-04</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+Support for creating new accounts.
+Support for &apos;token&apos; api call, for easy authentication.
+Moved the responsibility of storing/retrieving oauth tokens to the user. Proven to be much for flexible.
+A lot more examples.
+Consistent error handling between PECL extension and PEAR package.
+Fixed responses in the API.
+Fixed retrieval of Thumbnails.
+Fixed retrieval of hash-based getMetaData.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.4.1</release>
+    <api>0.4.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-06-22</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+Fixes for the following issues:
+
+Issue #10 - spaces in file name for getFile
+Issue #13 - spaces in file name for putFile (and move)
+Issue #15 - putFile always returns true
+Issue #21 - spaces in filename (for getMetaData)
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.4.2</release>
+    <api>0.4.2</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-07-20</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+Fixes for the following issues:
+
+Issue #25 - Patch for /Dropbox/API.php / Error using putfile 
+Issue #27 - Wordpress OAuth Support
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.4.3</release>
+    <api>0.4.3</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-09-04</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+Issue #28 - Oauth Curl class based on Wordpress class 
+Issue #30 - Can&apos;t open files with tilde in the name
+Issue #34 - Change API URLs to use HTTPS
+Issue #35 - Change hard-coded API URLs to use a class constant
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.4.4</release>
+    <api>0.4.4</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-09-26</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+- Added useSSL flag to constructor to allow turning off SSL use
+- Added code to turn off SSL validation during OAuth calls
+   </notes>
+  </release>
+ </changelog>
+</package>
