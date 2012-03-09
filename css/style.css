@@ -1,4 +1,4 @@
-/*2 
+/* 
  * HTML5 ✰ Boilerplate
  *
  * What follows is the result of much research on cross-browser styling. 
@@ -217,8 +217,7 @@ html,body {
 }
 
 body {
-	font-family: Arvo;
-/*	padding: 20px;	*/
+	font-family: Caudex;
 	background-color: #fff;
 	background-image: url(http://subtlepatterns.com/patterns/daimond_eyes.png);
 	color: #000;
@@ -264,18 +263,22 @@ header a {
 	color: #fff;
 }
 
-header a:hover {
-	text-decoration: underline;
-}
+
 
 header h1 {
-/*	color: #008500;	*/
 	color: #fff;
-	font-size: 30px;
+	font-family: 'Lato';	
+	text-transform: uppercase;
+	font-size: 36px;
 	width: 840px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	text-shadow:
+	   -1px -1px 0 #000,
+	    1px -1px 0 #000,
+	    -1px 1px 0 #000,
+	     1px 1px 0 #000;
 }
 
 
@@ -286,9 +289,13 @@ header h1 {
 
 #main a h2 {
 	color: #36a936;
+	font-family: 'Magra';	
+	font-weight: 400;	
 }
 
 #main h1 {
+	font-family: 'Magra';
+	font-weight: 400;
 	color: #36a936;
 }
 
