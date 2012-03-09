@@ -361,8 +361,28 @@ footer a:visited {
 
 #disqus_thread {
 	padding: 20px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 
+#disqus_thread h3 {
+	font-family: 'Magra';
+	font-weight: 400;
+	color: #36a936;
+}
+
+#disqus_thread a {
+	color: #36a936;
+}
+
+#disqus_thread .dsq-comment-header {
+	font-family: 'Magra';
+	font-weight: 400;
+}
+
+#disqus_thread .dsq-comment-header a {
+	font-weight: 400;
+}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
