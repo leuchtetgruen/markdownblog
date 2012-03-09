@@ -2,7 +2,7 @@
 
 include_once "config.php";
 
-include 'Dropbox/autoload.php';
+include 'Dropbox/Dropbox/autoload.php';
 include_once "Markdown/markdown.php";
 
 $oauth = new Dropbox_OAuth_PHP($consumerKey, $consumerSecret);
