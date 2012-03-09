@@ -16,6 +16,11 @@ $rssLang = "en-us";
 
 $thumbWidth = 200;
 
+/* Set if you want process.php to ask for a password and username */
+$admin_username = "";
+$admin_password = "";
+
+
 /*** Live part ***/
 
 $disqusName = "exampleblog";

@@ -2,6 +2,17 @@
 
 include_once "config.php";
 
+if (trim($admin_username)) {
+	if (!isset($_SERVER['PHP_AUTH_USER'])) {
+	    header('WWW-Authenticate: Basic realm="' . $rssTitle . '"');
+	    header('HTTP/1.0 401 Unauthorized');
+	    echo 'Too bad';
+	    exit;
+	} else {
+		if (!(($admin_username==$_SERVER['PHP_AUTH_USER']) && ($admin_password==$_SERVER['PHP_AUTH_PW']))) exit;
+	}	
+}
+
 include 'Dropbox/Dropbox/autoload.php';
 include_once "Markdown/markdown.php";
 
