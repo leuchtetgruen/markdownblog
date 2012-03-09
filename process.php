@@ -209,7 +209,7 @@ function createRssFromList($list) {
 	global $rssDesc;
 	global $rssLang;
 	
-	$rssfeed = '<?xml version="1.0" encoding="ISO-8859-1"?>' . "\r\n";
+	$rssfeed = '<?xml version="1.0" encoding="UTF-8"?>' . "\r\n";
 	$rssfeed .= '<rss version="2.0">' . "\r\n";
 	$rssfeed .= "\t". '<channel>' . "\r\n";
 	$rssfeed .= "\t\t". '<title>' . $rssTitle . '</title>' . "\r\n";
