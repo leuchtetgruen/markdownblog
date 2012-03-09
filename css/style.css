@@ -299,6 +299,19 @@ header h1 {
 	color: #36a936;
 }
 
+#main h2 {
+	font-family: 'Magra';
+	font-weight: 400;
+	color: #36a936;	
+}
+
+#main h3 {
+	font-family: 'Magra';
+	font-weight: 400;
+	color: #36a936;	
+}
+
+
 .updated {
 	color: #aaa;
 	margin-bottom: 10px;
