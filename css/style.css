@@ -235,7 +235,7 @@ body {
 	
 	overflow:auto;
 	padding-bottom: 50px;
-	width: 800px;
+	max-width: 800px;
 	margin-left: auto; margin-right: auto;
 }
 
@@ -270,7 +270,7 @@ header h1 {
 	font-family: 'Lato';	
 	text-transform: uppercase;
 	font-size: 36px;
-	width: 840px;
+	max-width: 840px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
