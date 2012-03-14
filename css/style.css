@@ -327,6 +327,7 @@ header h1 {
 }
 
 footer {
+	font-family:'Lato';
 	background-image: url(http://subtlepatterns.com/patterns/tileable_wood_texture.png);
 	border-top: 10px solid rgba(255, 255, 255, 0.5);			
 	color: #000;
